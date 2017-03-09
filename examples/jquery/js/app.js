@@ -173,7 +173,7 @@ jQuery(function ($) {
 			var $el = $(el);
 			var val = $el.val().trim();
 
-			if (!val) {
+			if (val !== '' && !val) {
 				this.destroy(e);
 				return;
 			}
